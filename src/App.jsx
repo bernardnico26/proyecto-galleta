@@ -30,19 +30,22 @@ function App() {
 
   document.body.style.backgroundImage = `url(${backgroundImage})`;
   document.body.style.backgroundSize = 'cover';
+  document.body.style.backgroundSize = 'no-repeat';
+
 
   return (
   <>
-    <section>
+    <section className='container'>
       <h1>GALLETAS DE LA FORTUNA</h1>
+      <section className='infos'>
+        <Yourluck
+          data= {phrases[index]}
+        />
+      </section>
     </section>
-    <section>
-      <Yourluck
-        data= {phrases[index]}
-      />
-    </section>
-    <section>
-      <button onClick={changeLuck}><i className='bx bx-shuffle'></i></button>
+
+    <section className='container'>
+      <button onClick={changeLuck}>🤞 obten tu fortuna</button>
     </section>
     
   </>
