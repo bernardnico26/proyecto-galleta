@@ -132,15 +132,21 @@ button {
             margin-top: 30%;
     }
     }
+    @media screen and (max-width: 452px) {
+        body {
+            margin-left: 58%;
+            margin-top: 30%;
+    }
+    }
     @media screen and (max-width: 440px) {
         body {
-            margin-left: 60%;
+            margin-left: 66%;
             margin-top: 30%;
     }
     }
     @media screen and (max-width: 420px) {
         body {
-            margin-left: 70%;
+            margin-left: 75%;
             margin-top: 30%;
     }
     }
